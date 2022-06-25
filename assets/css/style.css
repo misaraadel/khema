@@ -1394,6 +1394,19 @@ ul {
   margin: 0px !important;
 }
 
+.heading {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.heading h1 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 900;
+  margin: 0px;
+}
+
 @media (max-width: 999px) {
   .box .bed {
     height: 50px !important;
