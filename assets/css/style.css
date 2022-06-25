@@ -1402,5 +1402,17 @@ ul {
     height: 120px !important;
     margin-bottom: 0px !important;
   }
+  .flex-shape {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .flex-shape .column {
+    min-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

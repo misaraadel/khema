@@ -173,4 +173,15 @@
     height: 120px !important;
     margin-bottom: 0px !important;
   }
+
+  .flex-shape {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    .column {
+      min-width: 100%;
+    }
+  }
 }
