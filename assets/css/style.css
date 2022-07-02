@@ -36,6 +36,7 @@
 
 *::-webkit-scrollbar {
   width: 8px;
+  height: 20px !important;
 }
 
 *::-webkit-scrollbar-track {
@@ -1227,7 +1228,7 @@ ul {
           justify-content: center;
   position: relative;
   z-index: 9;
-  background-color: #FBBEA7;
+  background-color: #48BF53;
 }
 
 .shape-block.small-block {
@@ -1238,6 +1239,20 @@ ul {
   width: 25px;
   height: 25px;
   left: calc(50% - 12.5px);
+}
+
+.shape-block.small-shape::after {
+  left: unset !important;
+  bottom: unset !important;
+  top: calc(50% - 12.5px);
+  right: 0px;
+}
+
+.shape-block.left-shape::after {
+  left: 0px !important;
+  bottom: unset !important;
+  top: calc(50% - 12.5px);
+  right: unset;
 }
 
 .shape-block.big-place {
@@ -1258,6 +1273,39 @@ ul {
   right: 20px !important;
   background-color: #fff;
   z-index: -1;
+}
+
+.shape-block.big-place.right-left {
+  height: 90px !important;
+}
+
+.shape-block.big-place.right-left::after, .shape-block.big-place.right-left::before {
+  width: 30px;
+  height: 30px;
+}
+
+.shape-block.big-place.right-left::after {
+  top: calc(50% - 15px) !important;
+  right: 0px !important;
+}
+
+.shape-block.big-place.right-left::before {
+  top: calc(50% - 15px) !important;
+  left: 0px !important;
+  right: unset !important;
+}
+
+.shape-block.block-small {
+  height: 64px !important;
+}
+
+.shape-block.block-small::after {
+  height: 20px !important;
+  height: 20px;
+}
+
+.shape-block.complete {
+  background-color: #FF5252 !important;
 }
 
 .shape-block.bathroom::after {
@@ -1289,8 +1337,8 @@ ul {
 
 .box {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #A66D09;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
 }
 
 .box .bed {
@@ -1309,7 +1357,7 @@ ul {
           justify-content: center;
   position: relative;
   z-index: 9;
-  color: #FBBEA7;
+  color: #48BF53;
   font-size: 15px;
   font-weight: 700;
 }
@@ -1320,9 +1368,9 @@ ul {
   width: 100%;
   height: 100%;
   z-index: -1;
-  -webkit-filter: invert(74%) sepia(9%) saturate(1412%) hue-rotate(325deg) brightness(108%) contrast(97%);
-          filter: invert(74%) sepia(9%) saturate(1412%) hue-rotate(325deg) brightness(108%) contrast(97%);
-  background: url("../images/bed.svg") center/contain no-repeat;
+  -webkit-filter: invert(63%) sepia(67%) saturate(441%) hue-rotate(75deg) brightness(88%) contrast(87%);
+          filter: invert(63%) sepia(67%) saturate(441%) hue-rotate(75deg) brightness(88%) contrast(87%);
+  background: url("../images/bed.svg") center/100% no-repeat;
   top: 0;
   left: 0;
 }
@@ -1343,12 +1391,12 @@ ul {
 }
 
 .box .bed.complete {
-  color: #A66D09;
+  color: #FF5252;
 }
 
 .box .bed.complete::after {
-  -webkit-filter: invert(37%) sepia(92%) saturate(913%) hue-rotate(16deg) brightness(93%) contrast(93%);
-          filter: invert(37%) sepia(92%) saturate(913%) hue-rotate(16deg) brightness(93%) contrast(93%);
+  -webkit-filter: invert(39%) sepia(94%) saturate(759%) hue-rotate(323deg) brightness(100%) contrast(101%);
+          filter: invert(39%) sepia(94%) saturate(759%) hue-rotate(323deg) brightness(100%) contrast(101%);
 }
 
 .flex-data {
@@ -1394,6 +1442,10 @@ ul {
   margin: 0px !important;
 }
 
+.column {
+  margin-bottom: 100px !important;
+}
+
 .heading {
   width: 100%;
   margin-bottom: 30px;
@@ -1426,6 +1478,14 @@ ul {
   }
   .flex-shape .column {
     min-width: 100%;
+    margin-bottom: 0px !important;
+  }
+  .mobile-margin {
+    margin-top: 550px;
+  }
+  .small-mobile-margin {
+    margin-top: 400px;
+    margin-right: -500px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
