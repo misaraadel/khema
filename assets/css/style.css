@@ -1370,7 +1370,7 @@ ul {
   z-index: -1;
   -webkit-filter: invert(63%) sepia(67%) saturate(441%) hue-rotate(75deg) brightness(88%) contrast(87%);
           filter: invert(63%) sepia(67%) saturate(441%) hue-rotate(75deg) brightness(88%) contrast(87%);
-  background: url("../images/bed.svg") center/100% no-repeat;
+  background: url("../images/bed.svg") center/contain no-repeat;
   top: 0;
   left: 0;
 }
@@ -1461,7 +1461,10 @@ ul {
 
 @media (max-width: 999px) {
   .box .bed {
-    height: 50px !important;
+    height: 38px !important;
+  }
+  .box .bed::after {
+    background: url("../images/bed.svg") center/100% no-repeat !important;
   }
   .flex-data .bed {
     height: 120px !important;
