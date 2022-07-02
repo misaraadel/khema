@@ -1481,7 +1481,7 @@ ul {
     margin-bottom: 0px !important;
   }
   .mobile-margin {
-    margin-top: 550px;
+    margin-top: 550px !important;
   }
   .small-mobile-margin {
     margin-top: 400px;
